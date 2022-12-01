@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		546866FB293945030075FFA2 /* LoggedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546866FA293945030075FFA2 /* LoggedView.swift */; };
+		546866FD293945AF0075FFA2 /* TogglApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546866FC293945AF0075FFA2 /* TogglApi.swift */; };
+		546866FF293945D50075FFA2 /* ApiProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546866FE293945D50075FFA2 /* ApiProject.swift */; };
+		54686701293946190075FFA2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54686700293946190075FFA2 /* ApiError.swift */; };
+		54686703293946300075FFA2 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54686702293946300075FFA2 /* Codable.swift */; };
+		546867052939463E0075FFA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546867042939463E0075FFA2 /* Constants.swift */; };
+		5468670829394D2C0075FFA2 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468670729394D2C0075FFA2 /* Project.swift */; };
+		5468670A29394DAA0075FFA2 /* AsyncSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468670929394DAA0075FFA2 /* AsyncSequence.swift */; };
 		549B98A42936B39600175BA8 /* TogglGoalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B98A32936B39600175BA8 /* TogglGoalsApp.swift */; };
-		549B98A62936B39600175BA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B98A52936B39600175BA8 /* ContentView.swift */; };
+		549B98A62936B39600175BA8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B98A52936B39600175BA8 /* MainView.swift */; };
 		549B98A82936B39800175BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 549B98A72936B39800175BA8 /* Assets.xcassets */; };
 		549B98AB2936B39800175BA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 549B98AA2936B39800175BA8 /* Preview Assets.xcassets */; };
 		549B98AD2936B39800175BA8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549B98AC2936B39800175BA8 /* Persistence.swift */; };
@@ -36,9 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		546866FA293945030075FFA2 /* LoggedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedView.swift; sourceTree = "<group>"; };
+		546866FC293945AF0075FFA2 /* TogglApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglApi.swift; sourceTree = "<group>"; };
+		546866FE293945D50075FFA2 /* ApiProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProject.swift; sourceTree = "<group>"; };
+		54686700293946190075FFA2 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		54686702293946300075FFA2 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		546867042939463E0075FFA2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5468670729394D2C0075FFA2 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		5468670929394DAA0075FFA2 /* AsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSequence.swift; sourceTree = "<group>"; };
 		549B98A02936B39600175BA8 /* TogglGoals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TogglGoals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		549B98A32936B39600175BA8 /* TogglGoalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglGoalsApp.swift; sourceTree = "<group>"; };
-		549B98A52936B39600175BA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		549B98A52936B39600175BA8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		549B98A72936B39800175BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		549B98AA2936B39800175BA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		549B98AC2936B39800175BA8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -76,6 +92,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54686706293948140075FFA2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				549B98A52936B39600175BA8 /* MainView.swift */,
+				546866FA293945030075FFA2 /* LoggedView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5468670B2939570A0075FFA2 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				54686700293946190075FFA2 /* ApiError.swift */,
+				546866FE293945D50075FFA2 /* ApiProject.swift */,
+				546866FC293945AF0075FFA2 /* TogglApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		5468670C2939571A0075FFA2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				549B98AC2936B39800175BA8 /* Persistence.swift */,
+				546867042939463E0075FFA2 /* Constants.swift */,
+				54686702293946300075FFA2 /* Codable.swift */,
+				5468670929394DAA0075FFA2 /* AsyncSequence.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5468670D293963320075FFA2 /* Records */ = {
+			isa = PBXGroup;
+			children = (
+				5468670729394D2C0075FFA2 /* Project.swift */,
+			);
+			path = Records;
+			sourceTree = "<group>";
+		};
 		549B98972936B39600175BA8 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +153,15 @@
 		549B98A22936B39600175BA8 /* TogglGoals */ = {
 			isa = PBXGroup;
 			children = (
-				549B98A32936B39600175BA8 /* TogglGoalsApp.swift */,
-				549B98A52936B39600175BA8 /* ContentView.swift */,
+				5468670B2939570A0075FFA2 /* Api */,
+				5468670D293963320075FFA2 /* Records */,
+				54686706293948140075FFA2 /* Screens */,
+				5468670C2939571A0075FFA2 /* Tools */,
 				549B98A72936B39800175BA8 /* Assets.xcassets */,
-				549B98AC2936B39800175BA8 /* Persistence.swift */,
+				549B98A92936B39800175BA8 /* Preview Content */,
 				549B98B12936B39800175BA8 /* TogglGoals.entitlements */,
 				549B98AE2936B39800175BA8 /* TogglGoals.xcdatamodeld */,
-				549B98A92936B39800175BA8 /* Preview Content */,
+				549B98A32936B39600175BA8 /* TogglGoalsApp.swift */,
 			);
 			path = TogglGoals;
 			sourceTree = "<group>";
@@ -265,10 +321,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546866FB293945030075FFA2 /* LoggedView.swift in Sources */,
 				549B98AD2936B39800175BA8 /* Persistence.swift in Sources */,
-				549B98A62936B39600175BA8 /* ContentView.swift in Sources */,
+				546866FD293945AF0075FFA2 /* TogglApi.swift in Sources */,
+				54686701293946190075FFA2 /* ApiError.swift in Sources */,
+				549B98A62936B39600175BA8 /* MainView.swift in Sources */,
+				5468670A29394DAA0075FFA2 /* AsyncSequence.swift in Sources */,
+				546867052939463E0075FFA2 /* Constants.swift in Sources */,
+				54686703293946300075FFA2 /* Codable.swift in Sources */,
+				5468670829394D2C0075FFA2 /* Project.swift in Sources */,
 				549B98B02936B39800175BA8 /* TogglGoals.xcdatamodeld in Sources */,
 				549B98A42936B39600175BA8 /* TogglGoalsApp.swift in Sources */,
+				546866FF293945D50075FFA2 /* ApiProject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
