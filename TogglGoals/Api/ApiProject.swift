@@ -60,6 +60,10 @@ extension ApiProject {
     
     let authData = (apiToken + ":" + "api_token").data(using: .utf8)!.base64EncodedString()
     
+    #if DEBUG
+    print(authData)
+    #endif
+    
     request.addValue("Basic \(authData)", forHTTPHeaderField: "Authorization")
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
     

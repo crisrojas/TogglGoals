@@ -58,6 +58,7 @@ struct LoggedView: View {
     ScrollView(showsIndicators: false) {
       LazyVStack(alignment: .leading) {
         HStack {
+          logoutButton
           Spacer()
           reloadButton
         }
@@ -101,6 +102,14 @@ struct LoggedView: View {
       } else {
         Image(systemName: "repeat")
       }
+    }
+  }
+  
+  var logoutButton: some View {
+    Button {
+      apiToken = nil
+    } label: {
+      Text("Logout")
     }
   }
 }
